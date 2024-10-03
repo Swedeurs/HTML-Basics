@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinking Stars Background</title>
+    <style>
+  
+        body {
+            background-color: black;
+            color: white;
+            overflow: hidden; 
+            margin: 0;
+            height: 100vh;
+            position: relative;
+        }
+
+
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background-color: white;
+            border-radius: 50%;
+            opacity: 0;
+            animation: blink 3s infinite ease-in-out;
+        }
+
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+
+        .star:nth-child(1) { top: 10%; left: 20%; animation-duration: 2s; }
+        .star:nth-child(2) { top: 30%; left: 50%; animation-duration: 1.5s; }
+        .star:nth-child(3) { top: 70%; left: 10%; animation-duration: 2.5s; }
+        .star:nth-child(4) { top: 40%; left: 80%; animation-duration: 3s; }
+        .star:nth-child(5) { top: 90%; left: 25%; animation-duration: 1.8s; }
+        .star:nth-child(6) { top: 20%; left: 70%; animation-duration: 2.3s; }
+        .star:nth-child(7) { top: 60%; left: 40%; animation-duration: 1.7s; }
+
+
+    </style>
+</head>
+<body>
+    <div class="stars">
+
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      
+    </div>
+
+    <head>
+        <nav>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minus praesentium ratione neque. Labore, ratione maiores. Suscipit, impedit pariatur eaque, fuga vero eum cupiditate veritatis voluptas aspernatur incidunt porro ipsam.</li>
+                <li>Optio provident ducimus sed amet impedit repellat quo rem cum perferendis facilis veritatis inventore aliquam dolorum et at doloribus eveniet itaque nostrum, magni nisi ullam aliquid! Praesentium nulla voluptates repellat.</li>
+                <li>Accusantium, nobis ad, atque, delectus recusandae adipisci nihil quis at cum modi asperiores in corrupti et possimus voluptas odio maxime! Libero culpa atque laudantium quos, minus molestiae dolorum commodi ipsa.</li>
+            </ul>
+        </nav>
+    </head>
+
+
+    <div>
+        <p>CSS is Amazing</p>
+    </div>
+
+    <main class="article story">
+        <h2 class="story-heading">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+    </main>
+</body>
+</html>
